@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Cajero Bancario</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    Cajero Bancario Inteligente
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Operación
+                </td>
+                <td>
+                    <select id="id-select-operacion">
+                        <option value="Deposito">Depósito</option>
+                        <option value="Retiro">Retiro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Monto
+                </td>
+                <td>
+                    <input type="number" id="id-txt-monto" value="0" min="1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-registrar">Registrar Movimiento</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-presentar">Presentar Movimientos</button>
+                </td>
+                <td>
+                    <textarea id="id-listado-movimientos" rows="12" cols="40" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-calcular">Calcular Totales</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total Depositado
+                </td>
+                <td>
+                    <input type="text" id="id-txt-total-deposito" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total Retirado
+                </td>
+                <td>
+                    <input type="text" id="id-txt-total-retiro" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Saldo Final
+                </td>
+                <td>
+                    <input type="text" id="id-txt-saldo" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-limpiar">Limpiar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>

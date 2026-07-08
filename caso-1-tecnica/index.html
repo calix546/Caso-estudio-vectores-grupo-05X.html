@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Factura</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Simulador de Factura de Ventas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto</td>
+                <td>
+                    <select id="id-select-producto">
+                        <option value="Leche-1.00">Leche</option>
+                        <option value="Arroz-1.80">Arroz</option>
+                        <option value="Aceite-3.50">Aceite</option>
+                        <option value="Azucar-1.20">Azúcar</option>
+                        <option value="atun-0.50">atun</option>
+                        <option value="Gaseosa-1.75">Gaseosa</option>
+                        <option value="Huevos-0.20">Huevos</option>
+                        <option value="sal-0.35">sal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cantidad</td>
+                <td>
+                    <input type="number" id="id-txt-cantidad" value="1" min="1">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-agregar">Agregar Producto</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-presentar">Presentar Factura</button>
+                </td>
+                <td>
+                    <textarea id="id-listado-factura" rows="10" cols="40" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-calcular">Calcular Totales</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-limpiar">Limpiar Factura</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Subtotal
+                </td>
+                <td>
+                    <input type="text" id="id-txt-subtotal" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    IVA 15%
+                </td>
+                <td>
+                    <input type="text" id="id-txt-iva" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Descuento
+                </td>
+                <td>
+                    <input type="text" id="id-txt-descuento" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total a Pagar
+                </td>
+                <td>
+
+                    <input type="text" id="id-txt-total" readonly>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
